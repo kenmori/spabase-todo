@@ -9,7 +9,7 @@ import { NoticeForm } from '../components/NoticeForm'
 import { NoticeList } from '../components/NoticeList'
 import { useQueryClient } from 'react-query'
 
-const dashboard: NextPage = () => {
+const Dashboard: NextPage = () => {
   const queryClient = useQueryClient()
   const signOut = () => {
       supabase.auth.signOut()
@@ -39,4 +39,4 @@ const dashboard: NextPage = () => {
   )
 }
 
-export default dashboard
+export default Dashboard
